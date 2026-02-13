@@ -1,12 +1,32 @@
 
-h1{
-   animation-name: myAnimation;
-  animation-duration: 10s;
-} 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
 
-  @keyframes myAnimation {
-  0%   {color:red; left:0px; top:0px;}
-  50% {color: pink; left: 0px; top: 0px;}
-  100% {color:black left:0px; top:0px;}
-  
-}   
+
+@keyframes myAnimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;      
+}
+
